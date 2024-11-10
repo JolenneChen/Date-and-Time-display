@@ -69,13 +69,53 @@ function date(){
     var dyear = document.getElementById("year");
 
     var presentdate = new Date();
-    var month = String(presentTime.getMonth()+1);
-    var year = String(presentTime.getFullYear());
-    var days = String(presentTime.getDate());
+    var month = String(presentdate.getMonth()+1);
+    var year = String(presentdate.getFullYear());
+    var day = String(presentdate.getDate());
 
     console.log(month);
 
     const currentDate = new Date()
+    if (month == 1){
+        month = "January";
+    }
+    if (month == 2){
+        month = "February";
+    }
+    if (month == 3){
+        month = "March";
+    }
+    if (month == 4){
+        month = "April";
+    }
+    if (month == 5){
+        month = "May";
+    }
+    if (month == 6){
+        month = "June";
+    }
+    if (month == 7){
+        month = "July";
+    }
+    if (month == 8){
+        month = "August";
+    }
+    if (month == 9){
+        month = "September";
+    }
+    if (month == 10){
+        month = "October";
+    }
+    if (month == 11){
+        month = "November";
+    }
+
+    else {
+        month = "December";
+    }
+    
+
+
     dday.innerHTML = day;
     dmonth.innerHTML = month;
     dyear.innerHTML = year;
